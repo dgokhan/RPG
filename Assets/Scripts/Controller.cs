@@ -78,6 +78,11 @@ public class Controller : MonoBehaviour
 
             StickDirection = new Vector3(inputX, 0, inputY);
 
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+
+            }
+
             if (Input.GetKey(SprintButton))
             {
                 mainCam.fieldOfView = Mathf.Lerp(mainCam.fieldOfView, SpritFov, Time.deltaTime * 2);

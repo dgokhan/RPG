@@ -33,12 +33,12 @@ public class WeaponController : MonoBehaviour
             animator.SetTrigger("Attack");
         }
 
-        if (isStafe == true)
+        if (isStafe)
         {
             GetComponent<Controller>().walkType = Controller.MovementType.Strafe;
             GetComponent<IKLook>().Lower();
         }
-        if (isStafe == false)
+        else
         {
             GetComponent<Controller>().walkType = Controller.MovementType.Directional;
             GetComponent<IKLook>().Boost();
